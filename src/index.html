@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DEMO</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <style>
+     .header{
+    background-color: gray;
+    height: 100%; 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+    
+    padding: 20px;
+    color: rgb(0, 1, 10);
+    text-align: center;
+    height:500px;
+  }
+  .headerr{
+ height: 90px;
+ width: fit;
+ text-align: left;
+ background-color: rgb(88, 63, 9)
+  }
+  .column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+
+  .side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color:#006666;
+    padding: 20px;
+    color: white;
+  }
+
+  .sidecl {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color:#021f46bd;
+    padding: 20px;
+    color: rgb(228, 224, 1);
+  }
+
+
+  .add {
+    /*-ms-flex: 30%;  IE10 
+    flex: 30%;*/
+    background-color: #006666;
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+  .c01 {
+  /*-ms-flex: 30%;  IE10 */
+    flex: 30%;
+    background-color:MediumSeaGreen;
+    padding: 20px;
+    color: white;
+  }
+  .footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+#outer
+{
+    width:100%;
+    text-align: center;
+}
+.inner
+{
+    display: inline-block;
+}
+
+.dive {
+    height: fit-content;
+    width: fit-content;
+
+    display: flex;
+    justify-content: space-between;
+  }
+  .follous{
+    display: inline;
+  }
+
+  .pr1{
+    
+    padding-top: 45.5px;
+    padding-left: 20px;
+    transition: box-shadow .3s;
+  height: 250px;
+  width: fit;
+  margin: 50px;
+  border-radius:10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  }
+  .pr1:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+
+  .box {
+    display: grid;
+    width: 540px;
+    grid-template-columns: 120px 120px 120px;
+    align-items: start;
+    justify-content: space-between;
+  }
+  
+  .button {
+    background-color: #f44336; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .button:hover {
+    color: #ff7a59;
+ 
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+</style>
+  <body style="display: block;">
+    <div style="height:1000px">
+      <div class="headerr">
+
+        <h1 style="float:left; padding-left:100px; padding-top:1px; color: gold; font-weight: bold;"> http://www.ignitusnetworks.com/ </h1>
+        <img src="a.jpg" alt="" width="60px" height="60px"  style="float:right; padding-top:15.5px"></img>
+      </div>
+      <div style="height:100px;">
+      <h3 style="padding-left:100px; padding-top:36.5px; font-weight: bolder;">Catergories > </h3>
+      </div>
+      <div style="height:800px; background-image:url(b.jpg)">
+      <h1>words</h1>
+      </div>
+
+      <div>
+      <div  style="height:1500px; background-color:#f2f2f2">
+      <div class='container'>
+        <br></br>
+        <div class="pr1">
+          <div>
+        <img src="a.jpg" alt="" height="100px" width="100px" style="float:left"></img>
+        </div>
+        <div style="display:flex">
+        <div  style="padding-left:50px; padding-top:15px">
+          <h4>product one</h4>
+          <h3 id="price1" style="color:#006666;"></h3>
+          
+        </div>
+        <div style="padding-left:120px; padding-top:15px">
+         <h4>product one description</h4>
+        </div>
+        <div style="padding-left:120px">
+        
+            <form  form onSubmit="App.getp1(); return false;" role="form" style="padding-top:10px">
+                <div class="form-group" style="padding-right:10px">
+                  <label for="inputsm" style="color:black; font-weight:bold">---Qty</label>
+                  <input id="qty" class="col-xs-3" type="number"></input>
+                </div>
+                <br></br>
+                <div style="padding-right:10px">
+                <label for="inputsm" style="color:black; font-weight:bold">---Name</label>
+                  <input id="name" class="col-xs-5" type="text"></input>
+                </div>
+              <div  style="padding-right:150px">
+                <button type="submit" onSubmit="App.getpolicy(); return false;" class="button" >Pay</button>
+              </div>
+              </form>
+
+
+      </div>
+        </div>
+        </div>
+    
+        <div class="pr1">
+          <div>
+        <img src="a.jpg" alt="" height="100px" width="100px" style="float:left"></img>
+        </div>
+        <div style="display:flex">
+        <div  style="padding-left:50px; padding-top:15px">
+          <h4>product two</h4>
+          <h3 class="price2" style="color:#006666;"></h3>
+          
+        </div>
+        <div style="padding-left:120px; padding-top:15px">
+         <h4>product two description</h4>
+        </div>
+        <div style="padding-left:120px">
+        
+            <form  form onSubmit="App.getp2(); return false;" role="form" style="padding-top:10px">
+                <div class="form-group" style="padding-right:10px">
+                  <label for="inputsm" style="color:black; font-weight:bold">---Qty</label>
+                  <input id="qty" class="col-xs-3" type="number"></input>
+                </div>
+                <br></br>
+                <div style="padding-right:10px">
+                <label for="inputsm" style="color:black; font-weight:bold">---Name</label>
+                  <input id="name" class="col-xs-5" type="text"></input>
+                </div>
+              <div  style="padding-right:150px">
+                <button type="submit" onSubmit="App.getpolicy(); return false;" class="button" >Pay</button>
+              </div>
+              </form>
+
+      </div>
+        </div>
+        </div>
+
+         <div class="pr1">
+          <div>
+        <img src="a.jpg" alt="" height="100px" width="100px" style="float:left"></img>
+        </div>
+        <div style="display:flex">
+        <div  style="padding-left:50px; padding-top:15px">
+          <h4>product three</h4>
+          <h3 class="price3" style="color:#006666;"> ETH</h3>
+          
+        </div>
+        <div style="padding-left:120px; padding-top:15px">
+         <h4>product three description</h4>
+        </div>
+        <div style="padding-left:120px">
+        
+            <form  form onSubmit="App.getp3(); return false;" role="form" style="padding-top:10px">
+                <div class="form-group" style="padding-right:10px">
+                  <label for="inputsm" style="color:black; font-weight:bold">---Qty</label>
+                  <input id="qty" class="col-xs-3" type="number"></input>
+                </div>
+                <br></br>
+                <div style="padding-right:10px">
+                <label for="inputsm" style="color:black; font-weight:bold">---Name</label>
+                  <input id="name" class="col-xs-5" type="text"></input>
+                </div>
+              <div  style="padding-right:150px">
+                <button type="submit" onSubmit="App.getpolicy(); return false;" class="button" >Pay</button>
+              </div>
+              </form>
+
+      </div>
+        </div>
+        </div>
+        <div class="pr1">
+          <div>
+        <img src="a.jpg" alt="" height="100px" width="100px" style="float:left"></img>
+        </div>
+        <div style="display:flex">
+        <div  style="padding-left:50px; padding-top:15px">
+          <h4>product four</h4>
+          <h3  class="price4" style="color:#006666;"> ETH</h3>
+          
+        </div>
+        <div style="padding-left:120px; padding-top:15px">
+         <h4>product four description</h4>
+        </div>
+        <div style="padding-left:120px">
+        
+            <form  form onSubmit="App.getp4(); return false;" role="form" style="padding-top:10px">
+                <div class="form-group" style="padding-right:10px">
+                  <label for="inputsm" style="color:black; font-weight:bold">---Qty</label>
+                  <input id="qty" class="col-xs-3" type="number"></input>
+                </div>
+                <br></br>
+                <div style="padding-right:10px">
+                <label for="inputsm" style="color:black; font-weight:bold">---Name</label>
+                  <input id="name" class="col-xs-5" type="text"></input>
+                </div>
+              <div  style="padding-right:150px">
+                <button type="submit" onSubmit="App.getpolicy(); return false;" class="button" >Pay</button>
+              </div>
+              </form>
+
+      </div>
+        </div>
+        </div>
+
+     
+       
+
+
+              
+    
+
+
+     
+
+      
+     
+
+    
+    </div>
+    <div style="background-color:brown ;height:200px; width:100%">
+      <div>
+      <h4  id="accountAddress" class="text-center" style="color:white; padding-top:65px"></h4>
+      
+      </div>
+      <a href="#" class="fa fa-facebook"></a>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/web3.min.js"></script>
+      <script src="js/trufflecontract.min.js"></script>
+     
+      <script src="js/app.js"></script>  
+  </body>
+</html>
+
